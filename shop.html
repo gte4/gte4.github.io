@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Онлайн-магазин</h1>
+    </header>
+    <section>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Название товара 1</h2>
+            <p>Описание товара 1. Цена: $19.99</p>
+            <button onclick="addToCart(1)">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Название товара 2</h2>
+            <p>Описание товара 2. Цена: $29.99</p>
+            <button onclick="addToCart(2)">Добавить в корзину</button>
+        </div>
+        <!-- Добавьте больше товаров по аналогии -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Онлайн-магазин. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function addToCart(productId) {
+            // Реализация добавления товара в корзину
+            // Это место может взаимодействовать с вашей серверной частью для обработки добавления в корзину
+            alert('Товар добавлен в корзину: ' + productId);
+        }
+    </script>
+</body>
+</html>
 
