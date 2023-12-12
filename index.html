@@ -3,48 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой GitHub</title>
+    <title>Центрированное изображение с логотипом</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
         }
+
         header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 20px;
-            background-color: #f2f2f2;
+            padding: 1em;
         }
-        section {
-            max-width: 800px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
             margin: 0 auto;
         }
-        h1, h2 {
-            color: #333;
-        }
-        a {
-            color: #4183C4;
+        
+        .logo {
+            max-width: 100px; /* Укажите ширину логотипа по вашему усмотрению */
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Мой GitHub</h1>
-        <p>Добро пожаловать на мою страницу на GitHub</p>
+        <h1>Ваш логотип</h1>
     </header>
-    <section>
-        <h2>Репозитории</h2>
-        <ul>
-            <li><a href="https://github.com/gte4/gte4.github.io">Репозиторий 1</a></li>
-            <li><a href="https://github.com/BTSshortPussy/chatgpt">Репозиторий 2</a></li>
-            <!-- Добавьте ссылки на свои репозитории -->
-        </ul>
-    </section>
-    <section>
-        <h2>О себе</h2>
-        <p>Привет, меня зовут Платон. Я занимаюсь разработкой программного обеспечения и рад делиться своим опытом на GitHub.</p>
-    </section>
-    <footer>
-        <p>© 2023 Мой GitHub. Все права защищены.</p>
-    </footer>
+    
+    <img src="your_image.jpg" alt="Центрированное изображение">
+
+    <img src="your_logo.png" alt="Логотип" class="logo">
 </body>
 </html>
